@@ -1,0 +1,459 @@
+
+@font-face {
+    font-family: "Gordita";
+    src: url(../font-family/Gordita.otf);
+}
+:root{
+    --red: #cf202d;
+}
+/*Base styles*/
+body{
+    margin: 0;
+    padding: 0;
+}
+.textAlignRight{
+    text-align: right;
+}
+.marginLeft14{
+    margin-left: 14px;
+}
+.marginTop90{
+    margin-top: 90px;
+}
+.marginTop30{
+    margin-top: 30px;
+}
+.header-section{
+    background-image: url(../images/bg_main_image.jfif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.header-section .top-content{
+    display: flex;
+    justify-content: center;
+}
+.header-section .head{
+    max-width: 1120px;
+    width: 100%;
+    padding-top: 20px;
+}
+.header-section .main-logo{
+    font-size: 34px;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    text-align: center;
+    border-radius: 50%;
+}
+.header-section .user{
+    display: flex;
+    align-items: center;
+}
+.header-section .user span:first-child{
+    margin-right: 30px;
+}
+.header-section .user span a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+}
+.header-section .laptop-menu{
+    justify-content: space-between;
+    display: none;
+}
+.header-section .bottom-content{
+    display: flex;
+    justify-content: center;
+}
+.header-section .bottom-content h1{
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+    margin-top: 234px;
+    font-weight: 800;
+    font-style: italic;
+}
+.header-section .bottom-content h3{
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+}
+.header-section .search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 15px 0 70px;
+}
+.header-section .bottom-content .content{
+    display: flex;
+    flex-direction: column;
+    max-width: 528px;
+}
+.header-section .search .select-box{
+    position: relative;
+    width: 25%;
+}
+.header-section .search .select-box select{
+    height: 40px;
+    padding: 0 0 0 38px;
+    outline: none;
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border: none;
+}
+.header-section .search .search-box{
+    position: relative;
+    width: 70%;
+}
+.header-section .search .search-box input{
+    height: 40px;
+    padding: 0 30px 0 38px;
+    outline: none;
+    width: 100%;
+    border-top-right-radius: 6px;
+    border: none;
+    border-bottom-right-radius: 6px;
+}
+.search .select-box .icon, .search .search-box .icon{
+    position: absolute;
+    top: 0;
+    margin-left: 8px;
+    font-size: 25px;
+}
+.search-box .vertical-line{
+    position: absolute;
+    width: 1px;
+    height: 25px;
+    background: grey;
+    z-index: 1;
+    top: 7px;
+}
+.popular-dishes{
+    padding-top: 50px;
+    background: #fffbf7;
+    padding-bottom: 50px;
+    position: relative;
+}
+.coupon-applied{
+    position: absolute;
+    top: 0;
+    color: green;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 4px;
+    background: #fff;
+    display: none;
+}
+.coupon-applied p{
+    margin: 0 0 0 10px;
+
+}
+.dish-item{
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+    padding: 6px 6px 6px 6px;
+    margin-top: 10px;
+    background: #fff;
+}
+.dish-item .header{
+    position: relative;
+}
+.on-hover h5{
+    padding: 0;
+    margin: 8px 0 0 0;
+}
+.on-hover p{
+    font-size: 12px;
+}
+.dish-item .header .on-hover{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.9;
+    color: #fff;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4px;
+}
+.dish-item .header:hover .on-hover{
+    display: flex;
+}
+.dish-item img{
+    width: 100px;
+    height: 82px;
+}
+.dish-item .description{
+    margin-left: 6px;
+}
+.dish-item .description h4{
+    margin-bottom: 2px;
+}
+.dish-item .description p{
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: justify;
+    margin: 0;
+}
+.dishes .footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.dishes .footer p{
+    margin-bottom: 0;
+    padding-top: 5px;
+}
+.dishes .footer a{
+    text-decoration: none;
+    padding: 5px 20px;
+    background: #187201;
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid;
+    transition: 0.3s;
+}
+.dishes .footer a:hover{
+    border-color: #187201;
+    background: #fff;
+    color: #187201;
+}
+.popular-locality{
+    padding: 50px 0;
+}
+.locality-list{
+    position: relative;
+    padding: 12px 0 12px 20px;
+    box-shadow: rgb(28 28 28 / 8%) 0px 1.42623px 2.85246px;
+    border: 1px solid rgb(232, 232, 232);
+    margin-top: 30px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+.locality-list:hover{
+    box-shadow: rgb(28 28 28 / 8%) 0px 4px 8px;
+}
+.locality-list .icon{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    padding-right: 12px;
+}
+.app-section{
+    background: #fffbf7;
+    padding: 40px 0;
+}
+.app-section h1{
+    text-align: center;
+}
+.app-section p{
+    text-align: center;
+    font-size: 18px;
+}
+.app-section .radio-btn{
+    display: flex;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.radio-btn .form-check:last-child{
+    margin-left: 44px;
+}
+.mobile-btn{
+    margin-left: 20px;
+    display: block;
+}
+.form{
+    display: flex;
+}
+.desktop-btn{
+    display: none;
+    margin-left: 20px;
+    font-size: 14px;
+    min-width: 164px;
+    width: 164px;
+}
+.app-section .icons{
+    display: flex;
+    justify-content: center;
+}
+.app-section .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mobile-image{
+    display: none;
+}
+.footer{
+    text-align: center;
+    padding: 20px 0;
+}
+
+/*Coupon design styles */
+.coupon-section{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: rgb(0 0 0 /50%);
+    align-items: center;
+    display: none;
+}
+.close span{
+    position: absolute;
+    right: 14px;
+    font-size: 22px;
+    cursor: pointer;
+    top: 0;
+    color: #6f6d6d;
+}
+.main-box{
+    position: relative;
+    border-radius: 4px;
+    box-shadow: rgba(240, 239, 239, 0.2) 0px 8px 24px;
+    background: #ffffff;
+    max-width: 752px;
+    max-height: 600px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.main-box h2{
+    text-align: center;
+    color: #00991a;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.coupon-item{
+    border-bottom: 1px solid;
+    margin-bottom: 16px;
+}
+.coupon-item:last-of-type{
+    border:none !important;
+}
+.coupon-header{
+    display: flex;
+}
+.coupon-header img{
+    width: 93%;
+    height: 80px;
+}
+.coupon-header h4{
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 2px;
+    color: #06adf5;
+    border-radius: 6px;
+    text-align: left;
+    margin-bottom: 1px;
+}
+.coupon-header span{
+    font-size: 10px;
+    color: grey;
+}
+.coupon-header .code{
+    padding: 4px;
+    border-color: blue;
+    border: 1px solid;
+    text-align: center;
+    background: #06adf5;
+    color: #fff;
+    width: 130px;
+}
+.coupon-footer p{
+    font-size: 11px;
+    text-align: justify;
+}
+.coupon-footer p a{
+    font-size: 10px;
+    color: grey !important;
+    text-decoration: underline !important;
+    cursor: pointer;
+}
+/*End of coupon design styles*/
+/*Mobile styles*/
+.header-section .mobile-menu{
+    display: block;
+    color: #fff;
+}
+
+
+/*Small tablet styles*/
+@media screen and (min-width: 576px){
+    .header-section .bottom-content h1{
+        font-size: 80px;
+        margin-top: 20px;
+    }
+    .locality-list{
+        font-size: 20px;
+        width: fit-content;
+        padding-right: 156px;
+    }
+    
+}
+
+/*Medium tablet styles*/
+@media screen and (min-width: 768px){
+    .header-section .laptop-menu{
+        display: flex;
+    }
+    .header-section .mobile-menu{
+        display: none;
+    }
+    .desktop-btn{
+        display: block;
+    }
+    .mobile-btn{
+        display: none;
+    }
+    .app-section p{
+        text-align: left;
+    }
+    .app-section h1{
+        text-align: left;
+    }
+    .mobile-image{
+        display: block;
+    }
+    .app-section .icons{
+        justify-content: left;
+    }
+    .main-box{
+        overflow: hidden;
+    }
+    .coupon-item{
+        margin-bottom: 0;
+    }
+    .coupon-item:last-of-type{
+        padding-top: 16px;
+    }
+    .coupon-item:nth-last-of-type(2){
+        border-bottom: none;
+        border-right: 1px solid;
+        padding-top: 16px;
+    }
+    .coupon-item:nth-last-of-type(4){
+        border-right: 1px solid;
+    }
+
+}
+
+/*Large tablet and laptop styles*/
+@media screen and (min-width: 992px){
+    
+}
+
+/*Desktop styles*/
+@media screen and (min-width: 1200px){
+    
+
+}
+/*Some required media Query */
